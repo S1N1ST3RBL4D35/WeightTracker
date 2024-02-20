@@ -15,11 +15,11 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     mail($to, $subject, $message, $headers);
 
     //Redirect back to contecnt page with success message
-    header("Location: contact.html?status=success");
+    header("Location: contact.php?status=success");
     exit;
 } else {
     //Redirect back with an error message
-    header("Location: contact.html?status=error");
+    header("Location: contact.php?status=error");
     exit;
 }
 ?>
