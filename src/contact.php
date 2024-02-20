@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = $_POST['message'];
 
     //Set up email params
-    $to = 'your-email-here@example.com';
+    $to = 'gamedayjunction93@gmail.com';
     $subject = 'New Contact Form Submission';
     $headers = "From: $name <$email>\r\n";
     $headers .= "Reply-To: $email\r\n";
@@ -37,9 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <header>
             <h1>Your Weight Tracker</h1>
             <nav>
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
                 <a href="contact.php">Contact Us</a>
-                <a href="login.html">Login/Register</a>
+                <a href="register.php">Login/Register</a>
             </nav>
         </header>
         <main>
