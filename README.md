@@ -7,10 +7,17 @@ Using XAMPP Server to test (be sure to change your settings so that it works for
 
 
 Features Completed:
+Home Index Page
+Contact Us form and submission so that the message the user writes gets emailed to the admin of the website
+Register (registration, then it sends an OTP to the user's email which then they have to enter to verify their account, which will then take them back to the main page as a logged in user)
+
+Login (log in process and takes them to the main page as a logged in user)
+
+Verify_Otp (when the user gets their OTP from their email, they'll enter it in this form)
 
 
 Features needed to work on:
-
+Log Weight - Primary function of this website
 
 
 Features wanting to add:
