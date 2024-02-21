@@ -39,7 +39,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <nav>
                 <a href="index.php">Home</a>
                 <a href="contact.php">Contact Us</a>
-                <a href="register.php">Login/Register</a>
+                <?php
+                if(isset($_SESSION['user'])) {
+                    echo '<a href="log_weight.html">Log Weight</a>';
+                    echo '<a href="logout.php">Logout</a>';
+                } else {
+                    echo '<a href="register.php">Login/Register</a>';
+                }
+                ?>
             </nav>
         </header>
         <main>
