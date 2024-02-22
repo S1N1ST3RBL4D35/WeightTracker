@@ -17,7 +17,7 @@ Verify_Otp (when the user gets their OTP from their email, they'll enter it in t
 
 
 Features needed to work on:
-Log Weight - Made basis of Log Weight, still a work in progress through...
+Log Weight - Refactored code oas of 02/21/2024 - Testing in progress
 
 
 Features wanting to add:
