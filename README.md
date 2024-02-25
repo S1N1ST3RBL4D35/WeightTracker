@@ -5,12 +5,10 @@ This application is a simple weight tracker application using the following teec
 
 Using XAMPP Server to test (be sure to change your settings so that it works for your machine). Be sure to update files for sendmail php file so that PHP's mail function will work well with your system.
 
-Have 2 tables under one database for this program:
+**UPDATE**
+Only one table needed: users (id, username, email, password)
 
-Database name: 'insert-name-here'
-tables: 
-  1. Users - User registration/login information here: id, username, email, password, otp and verified:  Password is hashed through PHP (you may want to use a stronger hashing algorithm) and OTP is the one time passcode that is emailed to the user upon registering. Once OTP is submitted successfully, The verified field (which is defaulted to N for "No") will change to a "Y" for yes.
-  2. weight_logs - id, user_id, log_date, weight, unit: this will hold the entry logs the user enters their weight in. user_id is a foreign key to users id field and log_id is the primary key of this database.
+Changed the plan of this project and just going to use Vue.js to enter weights dynamically onto the screen when user enters the information (won't be saved anywhere as of yet, eventually maybe)
 
 
 Features Completed:
@@ -23,6 +21,10 @@ Login (log in process and takes them to the main page as a logged in user)
 Verify_Otp (when the user gets their OTP from their email, they'll enter it in this form)
 
 Logout - Kills the session and logs the user out bringing them back to the home page
+
+Features Working On:
+
+Log Weight - - Almost there
 
 
 Features needed to work on:
