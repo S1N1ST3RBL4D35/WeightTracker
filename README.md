@@ -27,8 +27,4 @@ Features Working On:
 Log Weight - - Almost there
 
 
-Features needed to work on:
-Log Weight - Refactored code oas of 02/21/2024 - Testing in progress
-
-
 Features wanting to add:
