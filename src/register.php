@@ -30,11 +30,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         //Is email valid?
         $registerError = 'Invalid email format';
     } elseif(emailAlreadyTaken($email)) {
-        //Is email tanek?
+        //Is email used?
         $registerError = 'Email already registered. Please use a different email';
     } elseif (empty($password)) {
+        //empty password field
         $registerError = 'Password is required';
     } elseif (strlen($password) < 6) {
+        //too short of a password
         $registerError = 'Password must be at least 6 characters long';
     } else {
         //all checks are successful, continue with registration process
