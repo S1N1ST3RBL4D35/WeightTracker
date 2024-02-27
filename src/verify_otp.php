@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD' ]== 'POST') {
         $username = $_SESSION['user_details']['username'];
         $email = $_SESSION['user_details']['email'];
         $password = $_SESSION['user_details']['password'];
-        $hashPass = password_hash($password, PASSWORD_BCRYPT);
+        $hashPass = password_hash($password, PASSWORD_BCRYPT);  //for security reasons you may want to use a more secure hashing algorithm
 
         //INSERT query
         $stmt = $conn->prepare('INSERT INTO users (username, email, password, otp, verified) VALUES (?,?,?,?,?)');
